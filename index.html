@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento Shopping Sul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Estacionamento Shopping Sul</h1>
+
+    <div class="container">
+        <h2>Entrada de Veículo</h2>
+        <input type="text" id="placaEntrada" placeholder="Placa (ex: AAA1B23)">
+        <input type="time" id="horaEntrada">
+        <button onclick="registrarEntrada()">Registrar Entrada</button>
+    </div>
+
+    <div class="container">
+        <h2>Saída de Veículo</h2>
+        <input type="text" id="placaSaida" placeholder="Placa (ex: AAA1B23)">
+        <input type="time" id="horaSaida">
+        <button onclick="registrarSaida()">Registrar Saída</button>
+    </div>
+
+    <div class="container">
+        <h2>Estacionamento </h2>
+        <div id="matrizEstacionamento"></div>
+    </div>
+
+    <div class="container">
+        <h2>Ticket</h2>
+        <div id="ticket"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

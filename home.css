@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #001f3f, #001730);
+    background-attachment: fixed;
+    color: #f0f0f0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+/* Containers com efeito vidro */
+.container {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+/* Inputs */
+input[type="text"],
+input[type="time"] {
+    padding: 10px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    width: calc(50% - 12px);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: border-color 0.3s;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+    border-color: #00bfff;
+    outline: none;
+}
+
+/* Botões */
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00bfff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #009acd;
+}
+
+/* Estacionamento */
+#matrizEstacionamento {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.celula {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 16px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.celula:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.ocupado {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+/* Ticket */
+#ticket {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#ticket p {
+    margin-bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 10px 0;
+}
